@@ -3,7 +3,7 @@ name: Unlit Material (3D)
 tags: material, model
 title: Unlit
 brief: This example shows how to create and apply an unlit material to a 3D model.
-author: aglitchman
+author: Artsiom Trubchyk
 scripts: unlit.vp, unlit.fp
 thumbnail: thumbnail.webp
 ---

@@ -2,7 +2,9 @@
 tags: animation, easing, input
 title: Easing Functions (Tweens)
 brief: Demonstrates different easing functions available in Defold.
-author: mikatuo, Defold Foundation
+authors:
+  - mikatuo
+  - Defold Foundation
 scripts: animator.script, controller.script
 thumbnail: thumbnail.webp
 ---

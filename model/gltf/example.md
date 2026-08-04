@@ -2,7 +2,7 @@
 tags: model
 title: GLTF - Infinite Track
 brief: This example shows how to use glTF models to build an infinite scrolling track.
-author: aglitchman
+author: Artsiom Trubchyk
 scripts: gltf.script
 thumbnail: thumbnail.webp
 ---

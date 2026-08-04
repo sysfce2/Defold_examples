@@ -2,7 +2,9 @@
 tags: material
 title: Wave Background
 brief: Shows how to use a Time shader constant to achieve a moving wave effect
-author: JuLongZhiLu(巨龙之路), Pkeod(Brian Kramer)
+authors:
+  - JuLongZhiLu(巨龙之路)
+  - Brian Kramer
 scripts: wave_background.fp
 thumbnail: thumbnail.png
 ---
@@ -12,4 +14,3 @@ This example contains a game object with a sprite component. The `Image` and `De
 Example uses a Fragment Constant of type `Time` introduced in Defold 1.12.3.
 
 ![image](image.png)
-

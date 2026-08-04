@@ -13,11 +13,15 @@ Examples are grouped by category, for instance "physics", "sprite" or "collectio
 ---
 title: Foobar
 brief: This example shows how to use foobar.
-author: Defold Foundation
+authors:
+  - Defold Foundation
+  - Another Contributor
 scripts: foo.script, bar.script
 thumbnail: myimage.png
 ---
 ```
 
+* Use the `authors` array for one or more contributors. The older single `author` field is still supported for existing examples.
+* Examples use the repository-wide CC0-1.0 licence by default. Add a `license` field only when an example needs a different licence.
 * List any scripts your example uses in the `scripts` field of the file header
 * The thumbnail image will be used on https://defold.com/examples 

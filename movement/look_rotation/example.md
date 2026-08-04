@@ -3,7 +3,7 @@ name: Look rotation (3D)
 tags: movement
 title: Look rotation
 brief: This example shows how to rotate a game object to look at the object in 3D space.
-author: aglitchman
+author: Artsiom Trubchyk
 scripts: look_rotation.script
 ---
 

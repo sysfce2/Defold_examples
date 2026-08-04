@@ -3,7 +3,7 @@ name: Basic Lights 3D
 tags: render, 3d
 title: Basic Lights 3D
 brief: This example shows how ambient, directional, point, and spot lights affect 3D models that use built-in lit materials.
-author: aglitchman
+author: Defold Foundation
 scripts:  car.script, orbit_camera.script
 thumbnail: thumbnail.webp
 ---
