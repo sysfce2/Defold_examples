@@ -3,13 +3,13 @@ scale_along_z: 0
 embedded_instances {
   id: "background"
   data: "components {\n"
-  "  id: \"repeating_background\"\n"
+  "  id: \"\"\n"
   "  component: \"/example/repeating_background.script\"\n"
   "}\n"
   "embedded_components {\n"
   "  id: \"model\"\n"
   "  type: \"model\"\n"
-  "  data: \"mesh: \\\"/builtins/assets/meshes/quad.dae\\\"\\n"
+  "  data: \"mesh: \\\"/builtins/assets/gltf/quad.gltf\\\"\\n"
   "name: \\\"{{NAME}}\\\"\\n"
   "materials {\\n"
   "  name: \\\"default\\\"\\n"
@@ -22,10 +22,6 @@ embedded_instances {
   "\"\n"
   "}\n"
   ""
-  rotation {
-    z: 0.13052619
-    w: 0.9914449
-  }
   scale3 {
     x: 512.0
     y: 512.0

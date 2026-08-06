@@ -2,7 +2,7 @@
 tags: sound
 title: Fade In-Out
 brief: This example shows how to make Fade-In and fade Fade-Out music.
-author: AGulev
+author: Alexey Gulev
 scripts: fade_in_out.script
 ---
 

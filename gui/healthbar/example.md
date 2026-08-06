@@ -2,7 +2,7 @@
 tags: gui
 title: Health Bar
 brief: This example demonstrates how to add different health bars.
-author: Pawel Jarosz
+author: Paweł Jarosz
 scripts: healthbar.script, healthbar.gui_script
 ---
 

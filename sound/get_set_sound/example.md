@@ -2,7 +2,7 @@
 tags: sound,resource
 title: Get and set sound
 brief: This example shows how to change which sound a sound component plays
-author: Defold
+author: Defold Foundation
 scripts: get_set_sound.script
 ---
 

@@ -2,7 +2,7 @@
 tags: gui
 title: Layouts
 brief: This example demonstrates the use of layouts.
-author: agulev
+author: Alexey Gulev
 scripts: layouts.gui_script
 ---
 

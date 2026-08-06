@@ -2,7 +2,7 @@
 tags: gui
 title: Slice-9
 brief: This example demonstrates slice-9 scaling gui box node.
-author: FlexYourBrain
+author: Agustin R.
 scripts: slice9.gui_script
 ---
 
@@ -22,4 +22,3 @@ Box Node
 Gui script
 : Use:
   - For animating the node to different sizes, showing slice-9 at its potential.  
-
