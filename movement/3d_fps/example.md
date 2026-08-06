@@ -2,7 +2,8 @@
 tags: movement
 title: First-person 3D camera and movement
 brief: Control a first-person camera using WASD and mouse to look with cursor lock.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: character_controller.script
 thumbnail: collection.png
 ---

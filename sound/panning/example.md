@@ -2,7 +2,8 @@
 tags: sound
 title: Panning
 brief: This example demonstrates how to pan a sound effect according to a GO's(game object) position on the screen.
-author: Agustin R.
+author_ids:
+  - agustin-r
 scripts: pan.script
 ---
 

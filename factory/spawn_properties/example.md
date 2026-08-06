@@ -2,7 +2,8 @@
 tags: factory
 title: Spawn enemies with script properties
 brief: This example shows how to spawn enemy game objects using a factory component with different properties.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: ship.script, enemy.script, spawner.script
 thumbnail: thumbnail.png
 ---

@@ -2,7 +2,8 @@
 tags: gui
 title: Pointer over
 brief: A GUI box node with an image texture and a script that react when pointer over this node.
-author: Alexey Gulev
+author_ids:
+  - alexey-gulev
 scripts: pointer_over.gui_script
 ---
 

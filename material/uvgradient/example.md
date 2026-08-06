@@ -2,7 +2,8 @@
 tags: material
 title: UV Gradient
 brief: This example shows how to apply a basic shader to a full screen quad.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: uvgradient.fp
 ---
 

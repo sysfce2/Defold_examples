@@ -2,9 +2,9 @@
 tags: particles
 title: Spawning Fireworks ParticleFX
 brief: This example shows how to spawn firework rockets with separate trail and burst particle effects, including a small dip before the burst.
-authors:
+author_ids:
   - fysx
-  - Defold Foundation
+  - defold-foundation
 scripts: fireworks.script
 thumbnail: thumbnail.png
 ---

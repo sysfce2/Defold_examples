@@ -2,7 +2,8 @@
 tags: physics
 title: Knockback
 brief: This example shows how to create a knockback effect when hit.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: enemy.script
 thumbnail: knockback_thumb.png
 ---

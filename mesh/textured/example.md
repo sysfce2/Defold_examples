@@ -2,7 +2,8 @@
 tags: mesh
 title: Textured Mesh
 brief: This example shows how to create a textured mesh component in the shape of a rectangle.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: texturedmesh.fp, texturedmesh.vp
 ---
 

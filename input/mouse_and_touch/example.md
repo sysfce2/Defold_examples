@@ -2,7 +2,8 @@
 tags: input
 title: Mouse and Touch Events
 brief: Shows how to read mouse and/or touch movement and mouse button/touch state.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: mouse_and_touch.script
 thumbnail: thumbnail.webp
 ---

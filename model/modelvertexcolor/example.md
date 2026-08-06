@@ -3,7 +3,8 @@ name: Vertex Color (3D model)
 tags: model
 title: Model Vertex Color
 brief: This example demonstrates how to apply a vertex color shader using exported attributes from a 3D model.
-author: Agustin R.
+author_ids:
+  - agustin-r
 scripts: vertexcolor.vp, vertexcolor.fp
 ---
 

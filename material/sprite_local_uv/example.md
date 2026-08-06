@@ -2,7 +2,8 @@
 tags: sprite
 title: Sprite local UV
 brief: This example shows how to get local UV coordinates of a sprite regardless of sprite size
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: sprite_local_uv.script, sprite_local_uv.vp, sprite_local_uv.fp
 ---
 

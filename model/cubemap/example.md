@@ -2,7 +2,8 @@
 tags: model, material, shader
 title: Cubemap Reflection
 brief: Shows how to sample a cubemap in a model shader to create environment reflections.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: cubemap_model.vp, cubemap_model.fp, orbit_camera.script
 thumbnail: thumbnail.webp
 ---

@@ -2,7 +2,8 @@
 tags: physics
 title: Apply Linear Impulse
 brief: Apply a linear impulse to a dynamic physics body on click or touch.
-author: JuLongZhiLu(巨龙之路)
+author_ids:
+  - julongzhilu
 scripts: apply_linear_impulse.script
 thumbnail: thumbnail.png
 ---

@@ -3,7 +3,8 @@ name: GPU Skinning
 tags: model
 title: GPU Skinning
 brief: This example demonstrates GPU skinning.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 thumbnail: skinning_thumb.png
 ---
 

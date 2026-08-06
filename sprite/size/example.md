@@ -2,7 +2,8 @@
 tags: sprite
 title: Sprite size
 brief: This example shows how to get the size of a sprite at run-time
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: size.script
 thumbnail: size_thumb.png
 ---

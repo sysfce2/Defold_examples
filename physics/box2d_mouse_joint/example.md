@@ -2,7 +2,8 @@
 tags: physics, box2d
 title: Box2D Mouse Joint
 brief: Create a mouse joint that pulls dynamic bodies toward a moving target.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: box2d_mouse_joint_v3.script, box2d_mouse_joint_v2.script
 thumbnail: thumbnail.webp
 ---

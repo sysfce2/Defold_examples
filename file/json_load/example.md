@@ -2,7 +2,8 @@
 tags: file
 title: Load JSON data
 brief: This example shows how to load json data using sys.load_resource().
-author: Jerakin
+author_ids:
+  - jerakin
 scripts: json_load.script
 ---
 

@@ -2,7 +2,8 @@
 tags: factory
 title: Spawn game object
 brief: This example shows how to dynamically spawn game objects with a factory component.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: bunny.script,debris.script
 ---
 

@@ -3,7 +3,8 @@ name: CustomSprite
 tags: material
 title: Custom Sprite
 brief: This example demonstrates a simple way to create and apply a custom sprite shader for changing colors and customizing an outline.
-author: Agustin R.
+author_ids:
+  - agustin-r
 scripts: set_color.script, recolor.fp, recolor.vp
 ---
 

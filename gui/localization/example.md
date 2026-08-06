@@ -2,7 +2,8 @@
 tags: gui, font
 title: Localization (RTL/LTR)
 brief: This example demonstrates how to handle localization in games, Unicode text layout, RTL rendering, and runtime font switching for localization.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: main.gui_script, localization_helper.lua, ui_helper.lua
 thumbnail: thumbnail.png
 ---

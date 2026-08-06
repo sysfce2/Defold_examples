@@ -2,7 +2,8 @@
 tags: sprite
 title: Sprite tint
 brief: This example shows how tint a sprite at run-time
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: tint.script
 thumbnail: tint_thumb.png
 ---

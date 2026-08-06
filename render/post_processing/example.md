@@ -2,7 +2,8 @@
 tags: render
 title: Post-processing
 brief: This example shows how to apply a post-processing effect by drawing to a render target and then to a fullscreen quad using a post processing shader.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: postprocess.script, invert.fp, invert.vp
 thumbnail: postprocess_thumb.png
 ---

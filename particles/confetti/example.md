@@ -2,7 +2,8 @@
 tags: particles
 title: ParticleFX - Confetti
 brief: This example shows a simple particle effect to imitate confetti with multiple emitters and global multipliers for all of them.
-author: Artsiom Trubchyk
+author_ids:
+  - artsiom-trubchyk
 scripts: confetti.script
 thumbnail: thumbnail.png
 ---

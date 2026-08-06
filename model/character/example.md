@@ -2,7 +2,8 @@
 tags: model, animation
 title: Character - Skeletal Animation
 brief: This example shows how to play skeletal animations on a glTF character model and trigger them from GUI buttons.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: player.script, orbit_camera.script, example.gui_script
 thumbnail: thumbnail.webp
 ---

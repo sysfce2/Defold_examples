@@ -2,7 +2,8 @@
 tags: particles
 title: Particle Effect Emission Space
 brief: This example demonstrates the difference between local and world particle emission spaces. Two UFO objects move up and down, showing how particles behave differently when emitted in emitter space versus world space.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: particlefx.script
 thumbnail: thumbnail.png
 ---

@@ -2,7 +2,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from validate_examples import example_scripts, resolve_script_reference
+from validate_examples import example_scripts, resolve_script_reference, validate_author_ids
 
 
 class ExampleScriptResolutionTests(unittest.TestCase):
@@ -17,6 +17,38 @@ class ExampleScriptResolutionTests(unittest.TestCase):
 		path = self.project_dir / relative_path
 		path.parent.mkdir(parents=True, exist_ok=True)
 		path.write_text("function init(self) end\n", encoding="utf-8")
+
+	def write_frontmatter(self, content: str) -> Path:
+		path = self.project_dir / "example.md"
+		path.write_text(f"---\n{content}\n---\n", encoding="utf-8")
+		return path
+
+	def test_accepts_one_or_more_stable_author_ids(self):
+		markdown = self.write_frontmatter(
+			"author_ids:\n  - defold-foundation\n  - another-contributor"
+		)
+		self.assertEqual([], validate_author_ids(markdown))
+
+	def test_rejects_missing_malformed_and_duplicate_author_ids(self):
+		cases = (
+			("title: Missing", "at least one"),
+			("author_ids:\n  - Defold Foundation", "kebab-case"),
+			("author_ids:\n  - alice\n  - alice", "duplicates"),
+		)
+		for frontmatter, message in cases:
+			with self.subTest(frontmatter=frontmatter):
+				errors = validate_author_ids(self.write_frontmatter(frontmatter))
+				self.assertTrue(any(message in error for error in errors), errors)
+
+	def test_rejects_legacy_author_fields(self):
+		for legacy in ("author: Alice", "authors:\n  - Alice"):
+			with self.subTest(legacy=legacy):
+				markdown = self.write_frontmatter(
+					f"{legacy}\nauthor_ids:\n  - alice"
+				)
+				self.assertTrue(
+					any("legacy" in error for error in validate_author_ids(markdown))
+				)
 
 	def test_unique_filename_is_found_anywhere_in_project(self):
 		self.add_script("main/scroll_manager/scroll_item.script")

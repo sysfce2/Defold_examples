@@ -2,7 +2,8 @@
 tags: animation
 title: Cursor animation
 brief: This example shows how to set and animate the normalized cursor value.
-author: Paweł Jarosz
+author_ids:
+  - pawel-jarosz
 scripts: cursor.script
 ---
 

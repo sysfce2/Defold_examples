@@ -2,7 +2,8 @@
 tags: animation
 title: Euler Rotation
 brief: Shows how to animate Euler rotation.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: euler_rotation.script
 thumbnail: thumbnail.png
 ---

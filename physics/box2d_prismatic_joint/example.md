@@ -2,7 +2,8 @@
 tags: physics, box2d
 title: Box2D Prismatic Joint
 brief: Create a motorized Box2D prismatic joint with translation limits from script using Box2D.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: box2d_prismatic_joint.script
 thumbnail: thumbnail.webp
 ---

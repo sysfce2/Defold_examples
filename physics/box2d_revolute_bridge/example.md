@@ -2,7 +2,8 @@
 tags: physics, box2d
 title: Box2D Revolute Bridge
 brief: Create a bridge from revolute joints between existing Defold collision objects.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: box2d_revolute_bridge_v3.script, box2d_revolute_bridge_v2.script
 thumbnail: thumbnail.webp
 ---

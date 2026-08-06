@@ -2,7 +2,8 @@
 tags: physics, box2d
 title: Box2D dynamic shape scale and mass
 brief: Resize dynamic Box2D collision shapes at runtime and recalculate body mass.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: box2d_dynamic_scale_v3.script, box2d_dynamic_scale_v2.script
 thumbnail: thumbnail.webp
 ---

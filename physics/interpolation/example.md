@@ -2,7 +2,8 @@
 tags: physics
 title: Fixed timestep interpolation
 brief: This example shows how to smooth physics motion in fixed update mode by interpolating a visual sprite while keeping the physics body fixed-step.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: interpolation.script
 thumbnail: thumbnail.png
 ---

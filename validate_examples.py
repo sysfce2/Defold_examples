@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import os
+import re
 import subprocess
 import sys
 from pathlib import Path, PurePosixPath
@@ -29,6 +30,8 @@ IGNORED_SCRIPT_DIRS = {
 	"js-web",
 	"node_modules",
 }
+
+AUTHOR_ID_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 
 def tracked_example_dirs() -> list[Path]:
@@ -75,19 +78,68 @@ def normalize_ref(value: str) -> str:
 	return value.strip().strip("\"'")
 
 
-def frontmatter_value(markdown_file: Path, key: str) -> str | None:
+def frontmatter_lines(markdown_file: Path) -> list[str]:
 	lines = markdown_file.read_text(encoding="utf-8").splitlines()
 	if not lines or lines[0] != "---":
-		return None
+		return []
 
-	for line in lines[1:]:
-		if line == "---":
-			return None
+	for index, line in enumerate(lines[1:], start=1):
+		if re.fullmatch(r"-{3,}", line):
+			return lines[1:index]
+
+	return []
+
+
+def frontmatter_value(markdown_file: Path, key: str) -> str | None:
+	for line in frontmatter_lines(markdown_file):
 		if not line.startswith(f"{key}:"):
 			continue
 		return line.split(":", 1)[1].strip()
 
 	return None
+
+
+def validate_author_ids(markdown_file: Path) -> list[str]:
+	lines = frontmatter_lines(markdown_file)
+	errors: list[str] = []
+	legacy_fields = [
+		key
+		for key in ("author", "authors")
+		if any(line.startswith(f"{key}:") for line in lines)
+	]
+	for key in legacy_fields:
+		errors.append(f"legacy {key} field is not supported; use author_ids")
+
+	author_ids: list[str] = []
+	for index, line in enumerate(lines):
+		if not line.startswith("author_ids:"):
+			continue
+		inline = line.split(":", 1)[1].strip()
+		if inline.startswith("[") and inline.endswith("]"):
+			author_ids.extend(
+				value.strip().strip("\"'")
+				for value in inline[1:-1].split(",")
+				if value.strip()
+			)
+		else:
+			for item in lines[index + 1 :]:
+				match = re.match(r"^\s+-\s+(.+?)\s*$", item)
+				if match:
+					author_ids.append(match.group(1).strip("\"'"))
+				elif item and not item[0].isspace():
+					break
+		break
+
+	if not author_ids:
+		errors.append("author_ids must contain at least one stable author ID")
+	for author_id in author_ids:
+		if not AUTHOR_ID_PATTERN.fullmatch(author_id):
+			errors.append(
+				f"author_ids entry must use lowercase ASCII kebab-case: '{author_id}'"
+			)
+	if len(author_ids) != len(set(author_ids)):
+		errors.append("author_ids must not contain duplicates")
+	return errors
 
 
 def split_scripts(value: str | None) -> list[str]:
@@ -169,6 +221,8 @@ def validate() -> int:
 		if not markdown_file.is_file():
 			continue
 		available_scripts = example_scripts(example_dir)
+		for error in validate_author_ids(markdown_file):
+			errors.append(f"{markdown_file}: {error}")
 
 		for script in split_scripts(frontmatter_value(markdown_file, "scripts")):
 			try:

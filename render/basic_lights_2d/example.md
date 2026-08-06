@@ -2,7 +2,8 @@
 tags: render, material, sprite
 title: Basic Lights 2D
 brief: This example shows how to make sprites respond to Defold Light components with a custom material in a basic setup.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: lit_sprite.vp, lit_sprite.fp, follow_cursor.script
 thumbnail: thumbnail.webp
 ---

@@ -2,7 +2,8 @@
 tags: model, animation, material
 title: Morph Target Weights
 brief: Shows how to override morph target weights on a Model component with `model.set_blend_weights()`.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: morph_target_set_weight.script, morph_target.vp
 thumbnail: thumbnail.webp
 ---

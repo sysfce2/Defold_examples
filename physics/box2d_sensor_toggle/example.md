@@ -2,7 +2,8 @@
 tags: physics, box2d
 title: Box2D Sensors
 brief: Create Box2D sensors from static collision shapes.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: sensor_box2d_v3.script, sensor_box2d_v2.script, spawn.script
 thumbnail: thumbnail.webp
 ---

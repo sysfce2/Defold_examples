@@ -2,7 +2,8 @@
 tags: sprite
 title: Bunnymark
 brief: This is a performance test for sprites
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: bunnymark.script
 thumbnail: bunnymark_thumb.png
 ---

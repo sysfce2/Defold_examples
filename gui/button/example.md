@@ -2,7 +2,8 @@
 tags: gui
 title: Button
 brief: A GUI box node with an image texture and a script to make it act as a button.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: button.gui_script
 ---
 

@@ -2,7 +2,8 @@
 tags: material
 title: Repeating Background
 brief: Create a full-screen scrolling background using a repeated texture on a glTF quad.
-author: Artsiom Trubchyk
+author_ids:
+  - artsiom-trubchyk
 scripts: repeating_background.script, repeating_background.vp, repeating_background.fp
 thumbnail: thumbnail.webp
 ---

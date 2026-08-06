@@ -2,7 +2,8 @@
 tags: render
 title: Orthographic Zoom
 brief: This example shows how to zoom an orthographic camera in and out by changing Orthographic Zoom while the camera is in Fixed mode.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: zoom.script
 thumbnail: thumbnail.png
 ---

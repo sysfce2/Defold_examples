@@ -2,6 +2,8 @@
 tags: physics
 title: Apply force
 brief: This example demonstrates how to apply directional force to all dynamic blocks on touch/click and draws debug direction lines.
+author_ids:
+  - defold-foundation
 thumbnail: thumbnail.png
 scripts: apply_force.script
 ---

@@ -2,7 +2,8 @@
 tags: animation, input
 title: Cancel animation
 brief: This example shows how to use `go.cancel_animations()` to stop a running animation and start a new one.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: cancel_animation.script
 ---
 

@@ -2,7 +2,8 @@
 tags: animation, easing
 title: Custom easing - square wave
 brief: This example shows how to define a custom easing curve and use it when animating with `go.animate()` instead of a built-in easing constant.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: custom_easing.script
 ---
 

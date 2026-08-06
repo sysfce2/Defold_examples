@@ -2,7 +2,8 @@
 tags: physics
 title: Kinematic physics
 brief: This example shows a simple setup with a kinematic physics objects. The difference between dynamic objects, simulated by the physics engine, and kinematic objects, that are user controlled, is clearly seen here.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: kinematic.script
 ---
 

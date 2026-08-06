@@ -1,7 +1,8 @@
 ---
 title: 3D Animations - Skinned Model
 brief: Learn how to play 3D animations from a GLB model using skinned model material.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: main.script, main.gui_script
 thumbnail: thumbnail.webp
 tags: animation, model, gui, input, message-passing

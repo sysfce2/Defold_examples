@@ -2,7 +2,8 @@
 tags: render, 3d
 title: Directional Light Shadows with PCF Filtering
 brief: This example shows how to implement a configurable, PCF-filtered shadow map for a directional light.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: directional_shadow.script, shadow_mapping.lua, directional_light_shadows.render_script, directional_shadow_depth.vp, directional_shadow_depth.fp, directional_shadow_receiver.vp, directional_shadow_receiver.fp, shadows.glsl
 thumbnail: thumbnail.webp
 ---

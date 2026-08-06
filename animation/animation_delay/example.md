@@ -2,7 +2,8 @@
 tags: animation, delay
 title: Animation Delay - Wave
 brief: This example shows how to use the delay parameter of `go.animate()` to create a wave effect.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: animation_delay.script
 thumbnail: thumbnail.png
 ---

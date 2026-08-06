@@ -3,7 +3,8 @@
 tags: physics, box2d
 title: Box2D Chain Terrain
 brief: Create Box2D chain terrain from script using Box2D V2 legacy and Box2D V3.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: box2d_chain_terrain_v3.script, box2d_chain_terrain_v2.script
 thumbnail: thumbnail.webp
 -------------------------

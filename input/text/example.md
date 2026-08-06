@@ -2,7 +2,8 @@
 tags: input
 title: Text input
 brief: Listens to text input trigger "type" and modifies the game object label with the alien's speech according to input. A "backspace" key trigger has also been added.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: text.script
 ---
 

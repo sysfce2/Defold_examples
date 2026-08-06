@@ -2,7 +2,8 @@
 tags: input
 title: Entity Picking
 brief: This example demonstrates how to pick a game object from the 3D scene.
-author: Artsiom Trubchyk
+author_ids:
+  - artsiom-trubchyk
 scripts: entity_picking.script
 ---
 

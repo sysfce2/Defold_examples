@@ -2,7 +2,8 @@
 tags: sprite
 title: Flip
 brief: This example demonstrates flipping a sprite animation vertically and horizontally.
-author: Agustin R.
+author_ids:
+  - agustin-r
 scripts: flip.script
 thumbnail: flip_thumb.png
 ---

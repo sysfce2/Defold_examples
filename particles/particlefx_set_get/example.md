@@ -2,7 +2,8 @@
 tags: particles
 title: ParticleFX emitter properties
 brief: This example shows how to get and set ParticleFX emitter image, animation, and material at runtime.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: particlefx_set_get.script, particlefx_glow.fp
 thumbnail: thumbnail.png
 ---

@@ -2,6 +2,8 @@
 tags: animation
 title: Flipbook animation
 brief: This example shows how to use a flipbook animation in a sprite
+author_ids:
+  - defold-foundation
 ---
 
 ![flipbook](flipbook.png)

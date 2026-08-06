@@ -2,7 +2,8 @@
 tags: gui
 title: Slice-9
 brief: This example demonstrates slice-9 scaling gui box node.
-author: Agustin R.
+author_ids:
+  - agustin-r
 scripts: slice9.gui_script
 ---
 

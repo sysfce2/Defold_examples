@@ -2,7 +2,8 @@
 tags: basics
 title: Parent/child
 brief: This example shows how to child a game object to a parent.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: parent.script,child.script
 ---
 

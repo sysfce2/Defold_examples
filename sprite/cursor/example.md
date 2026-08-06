@@ -2,7 +2,8 @@
 tags: sprite
 title: Sprite cursor
 brief: This example shows how to use the sprite animation cursor and frame count to manually select a specific frame
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: cursor.script
 thumbnail: cursor_thumb.png
 ---

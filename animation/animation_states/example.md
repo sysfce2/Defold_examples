@@ -1,7 +1,8 @@
 ---
 title: Finite State Machines
 brief: Shows how to build a small Finite State Machine module and use it to control character and animation states.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: knight.script, control.gui_script, fsm.lua
 thumbnail: thumbnail.png
 tags: animation, sprite, architecture, input

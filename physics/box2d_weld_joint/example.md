@@ -2,7 +2,8 @@
 tags: physics, box2d
 title: Box2D Weld Joint
 brief: Create Box2D weld joints from script so separate dynamic bodies behave like one rigid assembly.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: box2d_weld_joint.script
 thumbnail: thumbnail.webp
 ---

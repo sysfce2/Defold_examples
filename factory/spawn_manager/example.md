@@ -2,7 +2,8 @@
 tags: factory
 title: Spawn enemies with central management
 brief: This example shows how to spawn enemy game objects using a factory component and use a central manager to control movement and behavior of all enemies.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: ship.script, spawner.script
 thumbnail: thumbnail.png
 ---

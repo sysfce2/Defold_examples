@@ -2,9 +2,9 @@
 tags: material
 title: Wave Background
 brief: Shows how to use a Time shader constant to achieve a moving wave effect
-authors:
-  - JuLongZhiLu(巨龙之路)
-  - Brian Kramer
+author_ids:
+  - julongzhilu
+  - brian-kramer
 scripts: example/wave_background.fp
 thumbnail: thumbnail.png
 ---

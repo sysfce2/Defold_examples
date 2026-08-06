@@ -2,7 +2,8 @@
 tags: model, animation
 title: Morph Target Animation
 brief: Shows how to play glTF morph target animations with a morph-capable model material.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: morph_target.script, morph_target.vp
 thumbnail: thumbnail.webp
 ---

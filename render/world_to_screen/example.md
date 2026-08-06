@@ -2,7 +2,8 @@
 tags: render
 title: World to Screen
 brief: This example demonstrates how to convert 3D world coordinates to 2D screen coordinates using camera transformations.
-author: Artsiom Trubchyk
+author_ids:
+  - artsiom-trubchyk
 scripts: player.script
 thumbnail: thumbnail.png
 ---

@@ -2,7 +2,8 @@
 tags: physics, box2d
 title: Box2D Queries
 brief: This example shows how to use Box2D world overlap and raycast queries.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: box2d_queries.script
 thumbnail: thumbnail.webp
 ---

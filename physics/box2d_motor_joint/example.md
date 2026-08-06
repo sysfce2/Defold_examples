@@ -2,7 +2,8 @@
 tags: physics, box2d
 title: Box2D Motor Joint
 brief: Create and control a motorized Box2D joint from script using Box2D V2 and V3.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: box2d_motor_joint_v3.script, box2d_motor_joint_v2.script
 thumbnail: thumbnail.webp
 ---

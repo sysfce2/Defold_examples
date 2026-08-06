@@ -2,7 +2,8 @@
 tags: physics, box2d
 title: Box2D Material Properties Tuning
 brief: Tune Box2D density, friction, and restitution from script using Box2D V2 legacy and Box2D V3.
-author: Defold Foundation
+author_ids:
+  - defold-foundation
 scripts: box2d_material_tuning_v3.script, box2d_material_tuning_v2.script
 thumbnail: thumbnail.webp
 ---
