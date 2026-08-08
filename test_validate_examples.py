@@ -29,9 +29,18 @@ class ExampleScriptResolutionTests(unittest.TestCase):
 		)
 		self.assertEqual([], validate_author_ids(markdown))
 
+	def test_accepts_legacy_author_as_one_author(self):
+		for author in ("author: alice", "author: Evgenii Starostin"):
+			with self.subTest(author=author):
+				self.assertEqual(
+					[], validate_author_ids(self.write_frontmatter(author))
+				)
+
 	def test_rejects_missing_malformed_and_duplicate_author_ids(self):
 		cases = (
 			("title: Missing", "at least one"),
+			("author:", "at least one"),
+			('author: ""', "at least one"),
 			("author_ids:\n  - Defold Foundation", "kebab-case"),
 			("author_ids:\n  - alice\n  - alice", "duplicates"),
 		)
@@ -40,15 +49,11 @@ class ExampleScriptResolutionTests(unittest.TestCase):
 				errors = validate_author_ids(self.write_frontmatter(frontmatter))
 				self.assertTrue(any(message in error for error in errors), errors)
 
-	def test_rejects_legacy_author_fields(self):
-		for legacy in ("author: Alice", "authors:\n  - Alice"):
-			with self.subTest(legacy=legacy):
-				markdown = self.write_frontmatter(
-					f"{legacy}\nauthor_ids:\n  - alice"
-				)
-				self.assertTrue(
-					any("legacy" in error for error in validate_author_ids(markdown))
-				)
+	def test_rejects_legacy_authors_field(self):
+		markdown = self.write_frontmatter("authors:\n  - Alice\nauthor_ids:\n  - alice")
+		self.assertTrue(
+			any("legacy" in error for error in validate_author_ids(markdown))
+		)
 
 	def test_unique_filename_is_found_anywhere_in_project(self):
 		self.add_script("main/scroll_manager/scroll_item.script")

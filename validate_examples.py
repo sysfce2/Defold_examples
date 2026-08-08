@@ -102,15 +102,11 @@ def frontmatter_value(markdown_file: Path, key: str) -> str | None:
 def validate_author_ids(markdown_file: Path) -> list[str]:
 	lines = frontmatter_lines(markdown_file)
 	errors: list[str] = []
-	legacy_fields = [
-		key
-		for key in ("author", "authors")
-		if any(line.startswith(f"{key}:") for line in lines)
-	]
-	for key in legacy_fields:
-		errors.append(f"legacy {key} field is not supported; use author_ids")
+	if any(line.startswith("authors:") for line in lines):
+		errors.append("legacy authors field is not supported; use author_ids")
 
 	author_ids: list[str] = []
+	legacy_author = normalize_ref(frontmatter_value(markdown_file, "author") or "")
 	for index, line in enumerate(lines):
 		if not line.startswith("author_ids:"):
 			continue
@@ -130,7 +126,7 @@ def validate_author_ids(markdown_file: Path) -> list[str]:
 					break
 		break
 
-	if not author_ids:
+	if not legacy_author and not author_ids:
 		errors.append("author_ids must contain at least one stable author ID")
 	for author_id in author_ids:
 		if not AUTHOR_ID_PATTERN.fullmatch(author_id):
