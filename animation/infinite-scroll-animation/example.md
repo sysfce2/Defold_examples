@@ -1,7 +1,8 @@
 ---
 title: Infinite Scroll Animation
 brief: Learn how to make infinite scroll for all objects on your level with only two scripts
-author: Evgenii Starostin
+author_ids:
+  - evgenii-starostin
 scripts: scroll_item.script, scroll_controller.script
 thumbnail: thumbnail.webp
 tags: animation
