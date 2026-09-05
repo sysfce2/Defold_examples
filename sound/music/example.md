@@ -7,4 +7,4 @@ author_ids:
 scripts: music.script
 ---
 
-![music](music.jpg)
+![music](music.png)

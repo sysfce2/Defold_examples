@@ -7,4 +7,4 @@ author_ids:
 scripts: fade_in_out.script
 ---
 
-![fade_in_out](fade_in_out.jpg)
+![fade_in_out](fade_in_out.png)
