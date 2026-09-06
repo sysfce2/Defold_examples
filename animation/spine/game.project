@@ -1,7 +1,7 @@
 [project]
 title = Spine animation
 version = 0.1
-dependencies#0 = https://github.com/defold/extension-spine/archive/refs/tags/4.6.1.zip
+dependencies#0 = https://github.com/defold/extension-spine/archive/refs/tags/4.8.0.zip
 
 [bootstrap]
 main_collection = /example/spine.collectionc
